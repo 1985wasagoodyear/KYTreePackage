@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		3F63BF502318105200E8B755 /* KYTreePackage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F63BF4E2318105200E8B755 /* KYTreePackage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F63BF542318105D00E8B755 /* TreeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F63BF4523180D0900E8B755 /* TreeHelper.swift */; };
-		3F63BF552318105D00E8B755 /* Trees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F63BF4223180CDD00E8B755 /* Trees.swift */; };
+		3F63BF552318105D00E8B755 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F63BF4223180CDD00E8B755 /* BinaryTree.swift */; };
 		3F63BF562318105D00E8B755 /* Nodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F63BF4023180CBD00E8B755 /* Nodes.swift */; };
+		3F63BF58231810D100E8B755 /* TreeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F63BF57231810D100E8B755 /* TreeProtocols.swift */; };
+		3F63BF5A2318111F00E8B755 /* BinaryTree+Traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F63BF592318111F00E8B755 /* BinaryTree+Traversal.swift */; };
+		3F63BF5C2318112F00E8B755 /* BinaryTree+Ops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F63BF5B2318112F00E8B755 /* BinaryTree+Ops.swift */; };
 		3F88097B2310110100126046 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88097A2310110100126046 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,11 +31,14 @@
 
 /* Begin PBXFileReference section */
 		3F63BF4023180CBD00E8B755 /* Nodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nodes.swift; sourceTree = "<group>"; };
-		3F63BF4223180CDD00E8B755 /* Trees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trees.swift; sourceTree = "<group>"; };
+		3F63BF4223180CDD00E8B755 /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
 		3F63BF4523180D0900E8B755 /* TreeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeHelper.swift; sourceTree = "<group>"; };
 		3F63BF4C2318105200E8B755 /* KYTreePackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KYTreePackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F63BF4E2318105200E8B755 /* KYTreePackage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTreePackage.h; sourceTree = "<group>"; };
 		3F63BF4F2318105200E8B755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F63BF57231810D100E8B755 /* TreeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeProtocols.swift; sourceTree = "<group>"; };
+		3F63BF592318111F00E8B755 /* BinaryTree+Traversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryTree+Traversal.swift"; sourceTree = "<group>"; };
+		3F63BF5B2318112F00E8B755 /* BinaryTree+Ops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryTree+Ops.swift"; sourceTree = "<group>"; };
 		3F8809772310110100126046 /* TreeADT */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TreeADT; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F88097A2310110100126046 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,7 +65,10 @@
 			isa = PBXGroup;
 			children = (
 				3F63BF4023180CBD00E8B755 /* Nodes.swift */,
-				3F63BF4223180CDD00E8B755 /* Trees.swift */,
+				3F63BF57231810D100E8B755 /* TreeProtocols.swift */,
+				3F63BF4223180CDD00E8B755 /* BinaryTree.swift */,
+				3F63BF592318111F00E8B755 /* BinaryTree+Traversal.swift */,
+				3F63BF5B2318112F00E8B755 /* BinaryTree+Ops.swift */,
 				3F63BF4523180D0900E8B755 /* TreeHelper.swift */,
 				3F63BF4E2318105200E8B755 /* KYTreePackage.h */,
 				3F63BF4F2318105200E8B755 /* Info.plist */,
@@ -195,7 +204,10 @@
 			files = (
 				3F63BF542318105D00E8B755 /* TreeHelper.swift in Sources */,
 				3F63BF562318105D00E8B755 /* Nodes.swift in Sources */,
-				3F63BF552318105D00E8B755 /* Trees.swift in Sources */,
+				3F63BF552318105D00E8B755 /* BinaryTree.swift in Sources */,
+				3F63BF58231810D100E8B755 /* TreeProtocols.swift in Sources */,
+				3F63BF5A2318111F00E8B755 /* BinaryTree+Traversal.swift in Sources */,
+				3F63BF5C2318112F00E8B755 /* BinaryTree+Ops.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
